@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generator</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <%- include('nav.ejs') %>
+        <h1>upload is done... </h1>
+        <h1>we are generating for <% song_name %> lyrics wait</h1>
+        <script>
+            var song_name = `<%= song_name %>`;
+            console.log(song_name);
+        </script>
+        <script src="\javascripts\generator.js"></script>
+        <%- include('footer.ejs') %>

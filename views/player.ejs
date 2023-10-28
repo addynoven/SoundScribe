@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>player</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <%- include('nav.ejs') %>
+    <h1>Music Player</h1>
+    <% if (data===404) { %>
+      <h1>"Sorry, there are no songs available to play at the moment. Please upload songs to your music library before
+        playing." </h1>
+      <% } else if (data===403) { %>
+        <h1>"Sorry, file not found"</h1>
+        <% } else { %>
+          <div class="music-container" id="music-container">
+            <div class="music-info">
+              <h4 id="title"></h4>
+              <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+              </div>
+            </div>
+            <div class="music-timer">
+              <h4 id="digits">hello</h4>
+            </div>
+
+            <audio src="" id="audio"></audio>
+
+            <div class="img-container">
+              <img src="\images\maxresdefault.jpg" id="cover" alt="">
+            </div>
+
+            <div class="navigation">
+              <button id="prev" class="action-btn"><img src="\images\rewind-button.png" alt=""></button>
+              <button id="play" class="action-btn"><img src="\images\play-button-arrowhead.png" alt=""></button>
+              <button id="next" class="action-btn"><img src="\images\fast-forward.png" alt=""></button>
+            </div>
+          </div>
+
+          <div class="lyrics-area">
+            <h1></h1>
+          </div>
+          <script>
+            let arr = [];
+    <% data.forEach(element => { %>
+              arr.push("<%=element %>")
+              <% }) %>;
+            var song_names = `<%=names%>`;
+          </script>
+          <script src="\javascripts\script.js"></script>
+          <% } %>
+            <%- include('footer.ejs') %>
+              <!-- var lyrics = JSON.parse(`<%=// lyrics %>`); -->

@@ -1,0 +1,11 @@
+<%- include('header.ejs') %>
+    <div class="main_card">
+    </div>
+    <script>
+        let arr = [];
+        <% data.forEach(element => { %>
+            arr.push("<%=element %>")
+            <% }) %>
+    </script>
+    <script src="\javascripts\show.js"></script>
+    <%- include('footer.ejs') %>

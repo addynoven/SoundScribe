@@ -1,0 +1,23 @@
+<%- include('header.ejs') %>
+
+
+    <div class="file_upload">
+        <h1>
+            file upload....
+        </h1>
+        <form id="music_upload_from" action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="music_file">
+            <button type="submit">upload</button>
+        </form>
+    </div>
+
+    <div class="file_upload_by_link">
+        <!-- <h1>
+            file link....
+        </h1> -->
+        <!-- <form id="link_from" action="/link_upload" method="get">
+            <input type="url" name="audio_link">
+            <button type="submit">upload</button>
+        </form> -->
+    </div>
+    <%- include('footer.ejs') %>
