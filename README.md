@@ -18,7 +18,7 @@ To use SoundScribe, ensure the following:
 - Node.js installed
 - Python 3.10
 - Whisper AI library
--  **Minimum 6 GB VRAM:** SoundScribe requires a system with a minimum of 6 GB VRAM to perform efficiently due to the computational demands of Whisper AI's advanced features.
+-  **Minimum 8 GB VRAM:** SoundScribe requires a system with a minimum of 8 GB VRAM to perform efficiently due to the computational demands of Whisper AI's advanced features.
   
 ## Installation
 
@@ -60,7 +60,7 @@ To use SoundScribe, ensure the following:
     # Add necessary command or scripts here
     ```
 
-**Note:** For local setup, ensure your system meets the minimum requirements, including Node.js and a minimum of 6 GB VRAM for optimal performance.
+**Note:** For local setup, ensure your system meets the minimum requirements, including Node.js and a minimum of 8 GB VRAM for optimal performance.
 
 Choose the installation method that best suits your needs. The Docker container option provides a streamlined setup, while the local setup allows for more control and customization of the environment.
 
